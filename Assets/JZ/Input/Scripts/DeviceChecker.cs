@@ -1,7 +1,9 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.DualShock;
+#if !UNITY_WEBGL
 using UnityEngine.InputSystem.Switch;
+#endif
 using UnityEngine.InputSystem.Users;
 
 public class DeviceChecker : MonoBehaviour
@@ -34,8 +36,10 @@ public class DeviceChecker : MonoBehaviour
             return lastType;
         if (Gamepad.current is DualShockGamepad)
             lastType = GamepadType.sony;
+        #if !UNITY_WEBGL
         else if (Gamepad.current is SwitchProControllerHID)
             lastType = GamepadType.nSwitch;
+        #endif
         else
             lastType = GamepadType.xbox;
 
