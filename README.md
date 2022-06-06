@@ -7,7 +7,7 @@ Jump Till You Drop was a mini-project I made over the course of a few days. This
 
 
 <h2>New Repository Update</h2>
-<p>This project came from a previous repository that contained all 3rd party assets. Most art, music, and sfx files have now been witheld from the repository for redistribution purposes. The following packages are also needed in order to run the project.</p>
+<p>This project came from a previous repository that contained 3rd party assets. Most art, music, and sfx files have now been witheld from the repository for redistribution purposes. The following packages are also needed in order to run the project properly. If opened without the multi-scene package, note that the "Game" scene contains the camera. You will need to load this scene in the hierarchy along with any level scenes if you wish to properly see the levels in the game view.</p>
 
 <p>All in 1 sprite shader: https://assetstore.unity.com/packages/vfx/shaders/all-in-1-sprite-shader-156513</p>
 <p>Coding Jar Advanced Multi-Scene: https://assetstore.unity.com/packages/tools/utilities/advanced-multi-scene-cross-scene-references-47200#description</p>
