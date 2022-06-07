@@ -43,7 +43,7 @@ namespace JH.PLAYER
         {
             xMove = Input.GetAxisRaw("Horizontal");
 
-            if(Input.GetKeyDown(KeyCode.Space))
+            if(Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Jump"))
                 jumped = true;
         }
 
